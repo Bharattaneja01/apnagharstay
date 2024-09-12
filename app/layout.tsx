@@ -27,7 +27,9 @@ export default function RootLayout({
             <LoginModal />
             <RegisterModal />
             <Navbar />
-        {children}
+        <div className="pb-20 pt-36">
+          {children}
+        </div>
         </body>
     </html>
   );

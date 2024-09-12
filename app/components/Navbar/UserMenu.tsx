@@ -6,6 +6,7 @@ import { useCallback, useState } from "react";
 import MenuItem from "./MenuItem";
 import RegisterModal from "../modals/RegisterModal";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
+import LoginModal from "../modals/LoginModal";
 
 const UserMenu = () => {
     const registerModal=useRegisterModal();
@@ -14,6 +15,12 @@ const UserMenu = () => {
     const toggleOpen=useCallback(()=>{
         setIsOpen((value)=>!value);
     },[]);
+
+    // const onRent=useCallback(()=>{
+    //     if(!currentUser){
+    //         return LoginModal.onOpen();
+    //     }
+    // },[currentUser,loginModal]);
     return (
         <div className="relative">
             <div className="flex flex-row items-center gap-3">
