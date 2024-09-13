@@ -11,8 +11,8 @@ import Navbar from "./components/Navbar/navbar";
 const font = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AirBNB",
-  description: "AirBNB clone",
+  title: "apnaGharStay",
+  description: "SIH 2024 Project | Brown Bandits",
 };
 
 export default function RootLayout({
